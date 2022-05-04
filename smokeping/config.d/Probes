@@ -1,0 +1,28 @@
+*** Probes ***
+
+
++ FPing
+binary = /usr/bin/fping
+blazemode = true
+
+
+++ FPingLow
+step = 300
+pings = 10
+
+
+++ FPingHigh
+step = 60
+pings = 5
+
+
++EchoPingDNS
+binary = /usr/bin/echoping
+step = 120
+pings = 5
+
+
++EchoPingHttp
+binary = /usr/bin/echoping
+step = 900
+pings = 3

@@ -1,0 +1,39 @@
+*** Targets ***
+slaves = iotproject raspberrypi
+probe = FPingHigh
+
+menu = Top
+title = Network Latency Grapher
+remark = Welcome to the SmokePing website of xxx Company. \
+         Here you will learn all about the latency of our network.
+
++ Local
+
+menu = Local
+title = Local Network
+#parents = owner:/Test/James location:/
+
+++ LocalMachine
+
+menu = Local Machine
+title = This host
+host = localhost
+#alerts = someloss
+
++ Internet
+menu = Internet
+#title = Internet
+
+++ Google
+title = Google
+menu = Google
+probe = FPingLow
+host = www.google.com
+
+
+++ gdns
+title = Google public DNS
+menu = Google public DNS
+probe = EchoPingDNS
+dns_request = www.google.com
+host = 8.8.8.8

@@ -1,0 +1,10 @@
+http://192.168.232.128/*** Slaves ***
+secrets=/etc/smokeping/smokeping_secrets
+#+boomer
+#display_name=boomer
+#color=0000ff
+
++testpi
+display_name=Test pi
+color=ff0000
+

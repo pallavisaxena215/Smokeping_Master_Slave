@@ -1,0 +1,17 @@
+*** Alerts ***
+to = pallavisaxena0245@gmail.com
+from = pallavisaxena0245@gmail.com
+
+
++hostdown
+type = loss
+pattern = >60%
+edgetrigger = yes
+comment = Host is OFFLINE
+
+
++someloss
+type = loss
+# in percent
+pattern = >0%,*12*,>0%,*12*,>0%
+comment = loss 3 times  in a row

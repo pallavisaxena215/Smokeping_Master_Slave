@@ -1,0 +1,13 @@
+*** Slaves ***
+secrets=/etc/smokeping/smokeping_secrets
+#+boomer
+#display_name=boomer
+#color=0000ff
+
++iotproject
+display_name=Test pi
+color=ff0000
+
++raspberrypi
+display_name=Rasp pi
+color=0f6749
